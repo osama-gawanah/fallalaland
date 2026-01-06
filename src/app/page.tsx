@@ -51,10 +51,10 @@ const SkillCard = ({ name, logo }: SkillCardProps) => {
         "flex flex-col items-center justify-center gap-2"
       )}
     >
-      <img
+      <Image
         className="h-12 w-12 object-contain"
-        width="48"
-        height="48"
+        width={48}
+        height={48}
         alt={name}
         src={logo}
       />
@@ -98,7 +98,7 @@ export default function Page() {
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold tracking-tight leading-tight">
-            <span className="text-muted-foreground">We don't deliver events.</span>
+            <span className="text-muted-foreground">We don&apos;t deliver events.</span>
             <br />
             <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
               We deliver impact.
