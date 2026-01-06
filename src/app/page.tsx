@@ -214,7 +214,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 max-w-[800px] mx-auto md:px-0 px-8 md:overflow-visible overflow-hidden">
             <SwiperCards />
             <SwiperCards />
 
