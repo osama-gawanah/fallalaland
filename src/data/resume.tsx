@@ -1,16 +1,18 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, Globe, Target, Zap, Shield, Award } from "lucide-react";
 
 export const DATA = {
   name: "Osama Gawanah",
+  logo:"/logo.webp",
   initials: "OG",
   url: "https://osamagawanah.com",
   location: "Gaza, Palestine",
   locationLink: "https://www.google.com/maps/place/gaza",
   description:
-    "I am a skilled Frontend Developer with 4+ years of experience in web development. My expertise lies in crafting user-friendly and visually appealing interfaces using HTML, CSS, JavaScript, React, Next.js, and more.",
+    "At Fallalaland, we're not just a creative marketing agency; we're a hub for bold ideas and groundbreaking strategies tailored to the vibrant Saudi market.\n\n" +
+    "From brand storytelling to innovative campaigns, we provide a comprehensive range of marketing services designed to help your brand stand out in today's ever-changing landscape. ",
   summary:
-    "I am a skilled Frontend Developer with 4+ years of experience in web development. My expertise lies in crafting user-friendly and visually appealing interfaces using HTML, CSS, JavaScript, React, Next.js, and more. With a keen eye for design and a strong understanding of user experience principles, I am proficient in translating UI/UX designs into responsive and interactive web applications. I am passionate about staying updated with the latest trends and technologies in frontend development to deliver cutting-edge solutions.",
+    "Fallalaland is a Saudi-born creative agency specializing in high-impact events, brand activations, and immersive audience experiences.\n\nWe move fast, stay sharp, and execute with precision. Our work fits the pace and ambition of today’s Saudi market — clean operations, strong creative direction, and zero drama on the ground، Matching 20230’s Vision.",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -272,4 +274,31 @@ export const DATA = {
     },
   ],
   hackathons: [],
+  trustReasons: [
+    {
+      title: "Native.",
+      description: "We understand the Saudi market culturally and operationally.",
+      icon: Globe,
+    },
+    {
+      title: "Precision.",
+      description: "We deliver exactly what we promise.",
+      icon: Target,
+    },
+    {
+      title: "Agility.",
+      description: "We move quickly without losing quality.",
+      icon: Zap,
+    },
+    {
+      title: "Resilience.",
+      description: "We handle complexity without panic.",
+      icon: Shield,
+    },
+    {
+      title: "Merit.",
+      description: "Our work fits Vision 2030's demand for world-class standards.",
+      icon: Award,
+    },
+  ],
 } as const;

@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import "./globals.css";
 import { LightRays } from "@/components/light-rays";
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),

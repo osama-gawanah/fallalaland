@@ -184,3 +184,35 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     animation: none;
     mix-blend-mode: normal;
 }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* Globe to Map Transform Styles */
+.globe-graticule {
+  stroke: hsl(var(--muted-foreground));
+}
+
+.globe-country {
+  stroke: hsl(var(--foreground));
+}
+
+.globe-sphere-outline {
+  stroke: hsl(var(--border));
+}
+

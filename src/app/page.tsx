@@ -3,12 +3,18 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { SwiperCards } from "@/components/swiper-cards";
+import TrustReasonsCarousel from "@/components/trust-reasons-carousel";
 
 import { Marquee } from "@/components/ui/marquee";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Image from "next/image";
+import { GlobeToMapTransform } from "@/components/ui/globe-to-map-transform";
+import Stats from "@/components/count-up-stats";
+
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -67,17 +73,21 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <Image src={DATA.logo} alt="Fallalaland Logo" className=" -mt-12 mb-10" width={180} height={180} />
+              </BlurFade>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Welcome to Fallalaland 👋`}
               />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Markdown className="prose  max-w-[600px] dark:text-muted-foreground text-black md:text-xl">
+                  {DATA.description}
+                </Markdown>
+              </BlurFade>
             </div>
 
           </div>
@@ -87,18 +97,28 @@ export default function Page() {
 
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold tracking-tight leading-tight">
+            <span className="text-muted-foreground">We don't deliver events.</span>
+            <br />
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              We deliver impact.
+            </span>
+          </h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
-      <section id="work">
+    
+      <TrustReasonsCarousel />
+      <Stats />
+     
+      {/* <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold"><span className="text-muted-foreground">Work</span> Experience</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -119,8 +139,8 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-      </section>
-      <section id="education">
+      </section> */}
+      {/* <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
@@ -173,7 +193,56 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
+      </section> */}
+
+      <section id="events">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  My Projects
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Check out my latest work
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I&apos;ve worked on a variety of projects, from simple
+                  websites to complex web applications. Here are a few of my
+                  favorites.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 max-w-[800px] mx-auto">
+            <SwiperCards />
+            <SwiperCards />
+
+          </div>
+        </div>
       </section>
+
+      <section id="map" className="flex flex-col gap-4 justify-center items-center min-h-screen">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Map
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                CNC Around The World.
+              </h2>
+              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                CNC is a global company that operates in over 100 countries.
+              </p>
+            </div>
+          </div>
+        </BlurFade>
+        <div className="relative flex flex-col h-[500px] w-full items-stretch gap-2 overflow-clip bg-gray-50 dark:bg-neutral-950">
+          <GlobeToMapTransform />
+        </div>
+      </section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
