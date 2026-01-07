@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/contact-section";
 import { HowWeWorkSection } from "@/components/how-we-work-section";
 import { SignatureCapabilitiesSection } from "@/components/signature-capabilities-section";
 import { WhatWeDoSection } from "@/components/what-we-do-section";
+import { ClientsSection } from "@/components/clients-section";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <AboutSection />
       <TrustReasonsCarousel />
       <Stats />
+      <ClientsSection />
       <HowWeWorkSection />
       <WhatWeDoSection />
       {/* <SignatureCapabilitiesSection /> */}

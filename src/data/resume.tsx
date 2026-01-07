@@ -31,6 +31,16 @@ export const DATA = {
     "JavaScript",
     "TypeScript",
   ],
+  clients: [
+    "Client 1",
+    "Client 2",
+    "Client 3",
+    "Client 4",
+    "Client 5",
+    "Client 6",
+    "Client 7",
+    "Client 8",
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
