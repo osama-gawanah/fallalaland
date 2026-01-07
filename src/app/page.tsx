@@ -5,6 +5,9 @@ import { AboutSection } from "@/components/about-section";
 import { EventsSection } from "@/components/events-section";
 import { MapSection } from "@/components/map-section";
 import { ContactSection } from "@/components/contact-section";
+import { HowWeWorkSection } from "@/components/how-we-work-section";
+import { SignatureCapabilitiesSection } from "@/components/signature-capabilities-section";
+import { WhatWeDoSection } from "@/components/what-we-do-section";
 
 export default function Page() {
   return (
@@ -13,6 +16,9 @@ export default function Page() {
       <AboutSection />
       <TrustReasonsCarousel />
       <Stats />
+      <HowWeWorkSection />
+      <WhatWeDoSection />
+      {/* <SignatureCapabilitiesSection /> */}
       <EventsSection />
       <MapSection />
       <ContactSection />
