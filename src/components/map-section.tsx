@@ -5,7 +5,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export function MapSection() {
   return (
-    <section id="map" className="flex flex-col gap-4 justify-center items-center min-h-screen">
+    <section id="map" className="flex flex-col gap-4 justify-center items-center min-h-screen  px-6">
       <BlurFade delay={BLUR_FADE_DELAY * 11}>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

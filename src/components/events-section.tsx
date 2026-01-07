@@ -5,8 +5,8 @@ const BLUR_FADE_DELAY = 0.04;
 
 export function EventsSection() {
   return (
-    <section id="events">
-      <div className="space-y-12 w-full py-12">
+    <section id="events" className=" px-6">
+      <div className="space-y-12 w-full py-12 ">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">

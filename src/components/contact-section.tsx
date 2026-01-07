@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export function ContactSection() {
   return (
-    <section id="contact" className="w-full pt-20 px-5 relative flex flex-col justify-center items-center overflow-visible">
+    <section id="contact" className="w-full  px-6 pt-20 relative flex flex-col justify-center items-center overflow-visible">
       <div className="absolute inset-0 top-[-90px]">
         <svg
           className="w-full h-full"

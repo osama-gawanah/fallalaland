@@ -152,7 +152,7 @@ const services: ServiceCategory[] = [
 
 export function WhatWeDoSection() {
   return (
-    <section id="what-we-do" className="w-full">
+    <section id="what-we-do" className="w-full  px-6">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Header */}
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
@@ -178,7 +178,7 @@ export function WhatWeDoSection() {
             <WobbleCard
               key={service.id}
               containerClassName={cn(
-                "w-full ",
+                "w-full",
                 service.bgColor
               )}
               className="relative"

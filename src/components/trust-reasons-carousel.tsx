@@ -25,7 +25,7 @@ const TrustReasonsCarousel = () => {
   };
 
   return (
-    <section id="why-trust-us" className="overflow-hidden pt-4">
+    <section id="why-trust-us" className="overflow-hidden pt-4 pl-6">
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <div className="mb-12 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -35,7 +35,7 @@ const TrustReasonsCarousel = () => {
                 trust us
               </span>
             </h2>
-            <div className="flex gap-2">
+            <div className="flex gap-2  px-6">
               <Button
                 onClick={shiftLeft}
                 disabled={position === 0}
