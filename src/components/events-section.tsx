@@ -1,5 +1,9 @@
+'use client';
+
+import { useState } from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import { SwiperCards } from "@/components/swiper-cards";
+import { Button } from "@/components/ui/button";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -145,7 +149,12 @@ export function EventsSection() {
         "/events/value-expert/11.jpg",
       ],
     },
-  ]
+  ];
+
+
+
+
+
   return (
     <section id="events" className=" px-6">
       <div className="space-y-12 w-full py-12 ">
@@ -168,9 +177,10 @@ export function EventsSection() {
         </BlurFade>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 max-w-[800px] mx-auto md:px-0 px-8 md:overflow-visible overflow-hidden">
           {data.map((item, index) => (
-            <SwiperCards className={index == 8 ? "" : ""} key={index} data={item} />
+            <SwiperCards key={index} data={item} />
           ))}
         </div>
+
       </div>
     </section>
   );

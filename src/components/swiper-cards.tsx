@@ -68,6 +68,7 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
               height={1000}
               data-lightboxjs={lightboxIdentifier}
               quality={80}
+              loading={index === 0 ? 'eager' : 'lazy'}
             />
           </SwiperSlide>
         ))}
