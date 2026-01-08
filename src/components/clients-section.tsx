@@ -2,21 +2,20 @@
 
 import BlurFade from "@/components/magicui/blur-fade";
 import { Marquee } from "@/components/ui/marquee";
-import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 
 const BLUR_FADE_DELAY = 0.04;
 
 interface ClientCardProps {
-    name: string;
-    logo?: string;
+    src: string;
+    alt: string;
 }
 
-function ClientCard({ name, logo }: ClientCardProps) {
+function ClientCard({ src, alt }: ClientCardProps) {
     return (
         <div
             className={cn(
-                "flex h-20 w-20 shrink-0 items-center justify-center rounded-xl border",
+                "flex h-24 w-40 p-2 shrink-0 items-center justify-center rounded-xl border",
                 "bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white",
                 "border-border/50",
                 "transition-all duration-300",
@@ -24,25 +23,52 @@ function ClientCard({ name, logo }: ClientCardProps) {
                 "hover:shadow-lg"
             )}
         >
-            {logo ? (
-                <img
-                    src={logo}
-                    alt={name}
-                    className="h-12 w-12 object-contain"
-                />
-            ) : (
-                <span className="text-xs font-medium text-muted-foreground">{name}</span>
-            )}
+            <img
+                src={src}
+                alt={alt}
+                className="h-full w-full object-contain"
+            />
         </div>
     );
 }
-
-// Client logos mapping - you can add actual logo URLs here
-const clientLogos: Record<string, string> = {
-    // Add client logo mappings here
-    // "Client 1": "/logos/client1.png",
-};
-
+const data = [
+    {
+        src: "/clients/1.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/2.png",
+        alt: "",
+    },
+    {
+        src: "/clients/3.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/4.png",
+        alt: "",
+    },
+    {
+        src: "/clients/5.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/6.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/7.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/8.webp",
+        alt: "",
+    },
+    {
+        src: "/clients/9.webp",
+        alt: "",
+    },
+];
 export function ClientsSection() {
     return (
         <section id="clients" className="px-6">
@@ -53,20 +79,20 @@ export function ClientsSection() {
                 <BlurFade delay={BLUR_FADE_DELAY * 10}>
                     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
                         <Marquee pauseOnHover className="[--duration:20s]">
-                            {DATA.clients.slice(0, Math.ceil(DATA.clients.length / 2)).map((client) => (
+                            {data.slice(0, Math.ceil(data.length / 2)).map((client, index) => (
                                 <ClientCard
-                                    key={client}
-                                    name={client}
-                                    logo={clientLogos[client] || `https://via.placeholder.com/48?text=${client}`}
+                                    key={index}
+                                    src={client.src}
+                                    alt={client.alt}
                                 />
                             ))}
                         </Marquee>
                         <Marquee reverse pauseOnHover className="[--duration:20s]">
-                            {DATA.clients.slice(Math.ceil(DATA.clients.length / 2)).map((client) => (
+                            {data.slice(Math.ceil(data.length / 2)).map((client, index) => (
                                 <ClientCard
-                                    key={client}
-                                    name={client}
-                                    logo={clientLogos[client] || `https://via.placeholder.com/48?text=${client}`}
+                                    key={index + Math.ceil(data.length / 2)}
+                                    src={client.src}
+                                    alt={client.alt}
                                 />
                             ))}
                         </Marquee>

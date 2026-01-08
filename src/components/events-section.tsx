@@ -4,6 +4,143 @@ import { SwiperCards } from "@/components/swiper-cards";
 const BLUR_FADE_DELAY = 0.04;
 
 export function EventsSection() {
+
+  const data = [
+    {
+      name: "AMIVIZ Black Hat.",
+      logo: "/events/amiviz-booth-managment/logo.svg",
+      bg: "white",
+      photos: [
+        "/events/amiviz-booth-managment/1.jpg",
+        "/events/amiviz-booth-managment/2.jpg",
+        "/events/amiviz-booth-managment/3.jpg",
+        "/events/amiviz-booth-managment/4.jpg",
+      ],
+    },
+    {
+      name: "METATRON.",
+      logo: "/events/metatron-dubai/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/metatron-dubai/1.jpg",
+        "/events/metatron-dubai/2.jpg",
+        "/events/metatron-dubai/3.jpg",
+        "/events/metatron-dubai/4.jpg",
+        "/events/metatron-dubai/5.jpg",
+        "/events/metatron-dubai/6.jpg",
+        "/events/metatron-dubai/7.jpg",
+      ],
+    },
+    {
+      name: "Modern Construction Saudi Build.",
+      logo: "/events/modern-construction-saudi-build/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/modern-construction-saudi-build/1.jpg",
+        "/events/modern-construction-saudi-build/2.jpg",
+        "/events/modern-construction-saudi-build/3.jpg",
+        "/events/modern-construction-saudi-build/4.jpg",
+        "/events/modern-construction-saudi-build/5.jpg",
+        "/events/modern-construction-saudi-build/6.jpg",
+        "/events/modern-construction-saudi-build/7.jpg",
+        "/events/modern-construction-saudi-build/8.jpg",
+        "/events/modern-construction-saudi-build/9.jpg",
+
+      ],
+    },
+    {
+      name: "Nour Net Black Hat.",
+      logo: "/events/nour-net-black-hat/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/nour-net-black-hat/1.jpg",
+        "/events/nour-net-black-hat/2.jpg",
+        "/events/nour-net-black-hat/3.jpg",
+        "/events/nour-net-black-hat/4.jpg",
+        "/events/nour-net-black-hat/5.jpg",
+        "/events/nour-net-black-hat/6.jpg",
+        "/events/nour-net-black-hat/7.jpg",
+        "/events/nour-net-black-hat/8.jpg",
+
+      ],
+    },
+    {
+      name: "Nour Net Black Hat.",
+      logo: "/events/nour-net-leap/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/nour-net-leap/1.jpg",
+        "/events/nour-net-leap/2.jpg",
+        "/events/nour-net-leap/3.jpg",
+
+      ],
+    },
+    {
+      name: "SGP Founding Day.",
+      logo: "/events/saudi-global-port-founding-day/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/saudi-global-port-founding-day/1.jpg",
+        "/events/saudi-global-port-founding-day/2.jpg",
+        "/events/saudi-global-port-founding-day/3.jpg",
+        "/events/saudi-global-port-founding-day/4.jpg",
+        "/events/saudi-global-port-founding-day/5.jpg",
+        "/events/saudi-global-port-founding-day/6.jpg",
+        "/events/saudi-global-port-founding-day/7.jpg",
+        "/events/saudi-global-port-founding-day/8.jpg",
+      ],
+    },
+    {
+      name: "SGP Ramadan Iftar.",
+      logo: "/events/saudi-global-port-riyadh-ramadan-iftar/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/saudi-global-port-riyadh-ramadan-iftar/1.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/2.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/3.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/4.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/5.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/6.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/7.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/8.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/9.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/10.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/11.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/12.jpg",
+        "/events/saudi-global-port-riyadh-ramadan-iftar/13.jpg",
+      ],
+    },
+    {
+      name: "SGP Summer Activity.",
+      logo: "/events/summer-refreshments-party/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/summer-refreshments-party/1.jpg",
+        "/events/summer-refreshments-party/2.jpg",
+        "/events/summer-refreshments-party/3.jpg",
+        "/events/summer-refreshments-party/4.jpg",
+
+      ],
+    },
+    {
+      name: "Value Expert Ramadan Iftar.",
+      logo: "/events/value-expert/logo.svg",
+      bg: "white",
+      photos: [
+        "/events/value-expert/1.jpg",
+        "/events/value-expert/2.jpg",
+        "/events/value-expert/3.jpg",
+        "/events/value-expert/4.jpg",
+        "/events/value-expert/5.jpg",
+        "/events/value-expert/6.jpg",
+        "/events/value-expert/7.jpg",
+        "/events/value-expert/8.jpg",
+        "/events/value-expert/9.jpg",
+        "/events/value-expert/10.jpg",
+        "/events/value-expert/11.jpg",
+      ],
+    },
+  ]
   return (
     <section id="events" className=" px-6">
       <div className="space-y-12 w-full py-12 ">
@@ -25,8 +162,9 @@ export function EventsSection() {
           </div>
         </BlurFade>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 max-w-[800px] mx-auto md:px-0 px-8 md:overflow-visible overflow-hidden">
-          <SwiperCards />
-          <SwiperCards />
+          {data.map((item, index) => (
+            <SwiperCards className={index == 8 ? "" : ""} key={index} data={item} />
+          ))}
         </div>
       </div>
     </section>
