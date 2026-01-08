@@ -9,7 +9,6 @@ import { cn } from '@/lib/utils';
 import { SlideshowLightbox } from 'lightbox.js-react';
 import { useMemo } from 'react';
 import { ChevronRight } from 'lucide-react';
-import Grid from './ui/grid-pattern';
 
 interface SwiperCardsProps {
   data: {
@@ -36,10 +35,10 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
   }, [photos, name]);
 
   const displayedPhotos = useMemo(() => {
-    return photos.length > 4 ? photos.slice(0, 4) : photos;
+    return photos.length > 4 ? photos.slice(0, 3) : photos;
   }, [photos]);
 
-  const hasMorePhotos = photos.length > 4;
+  const hasMorePhotos = photos.length > 3;
 
   return (
     <SlideshowLightbox

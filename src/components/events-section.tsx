@@ -6,8 +6,8 @@ import BlurFade from "@/components/magicui/blur-fade";
 import { SwiperCards } from "@/components/swiper-cards";
 
 const BLUR_FADE_DELAY = 0.04;
-const INITIAL_EVENTS_COUNT = 6;
-const EVENTS_PER_LOAD = 6;
+const INITIAL_EVENTS_COUNT = 4;
+const EVENTS_PER_LOAD = 4;
 
 interface EventData {
   name: string;
