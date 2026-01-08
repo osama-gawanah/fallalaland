@@ -65,7 +65,7 @@ export function EventsSection() {
       ],
     },
     {
-      name: "Nour Net Black Hat.",
+      name: "Nour Net Leap.",
       logo: "/events/nour-net-leap/logo.svg",
       bg: "dark",
       photos: [
@@ -118,8 +118,6 @@ export function EventsSection() {
         "/events/summer-refreshments-party/1.jpg",
         "/events/summer-refreshments-party/2.jpg",
         "/events/summer-refreshments-party/3.jpg",
-        "/events/summer-refreshments-party/4.jpg",
-
       ],
     },
     {
@@ -148,14 +146,14 @@ export function EventsSection() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                My Projects
+                Our Projects
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Check out my latest work
+                Check our latest work
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I&apos;ve worked on a variety of projects, from simple
-                websites to complex web applications. Here are a few of my
+                We&apos;ve worked on a variety of projects, from simple
+                websites to complex web applications. Here are a few of our
                 favorites.
               </p>
             </div>
