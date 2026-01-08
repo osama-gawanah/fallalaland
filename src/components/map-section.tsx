@@ -16,7 +16,7 @@ export function MapSection() {
               CNC Around The World.
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              CNC is a global company that operates in over 100 countries.
+              CNC is a global company that operates in over 4 countries.
             </p>
           </div>
         </div>
