@@ -35,7 +35,7 @@ const TrustReasonsCarousel = () => {
                 trust us
               </span>
             </h2>
-            <div className="flex gap-2  px-6">
+            <div className="flex gap-2  md:px-6 px-4">
               <Button
                 onClick={shiftLeft}
                 disabled={position === 0}

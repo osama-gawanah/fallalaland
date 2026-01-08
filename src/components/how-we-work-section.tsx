@@ -120,7 +120,7 @@ function StepCard({ step, index }: StepCardProps) {
 
 export function HowWeWorkSection() {
   return (
-    <section id="how-we-work" className="w-full py-20 px-6">
+    <section id="how-we-work" className="w-full py-20 md:px-6 px-4">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Header */}
         <BlurFade delay={BLUR_FADE_DELAY * 12}>

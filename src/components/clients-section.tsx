@@ -70,7 +70,7 @@ const data = [
 ];
 export function ClientsSection() {
     return (
-        <section id="clients" className="px-6">
+        <section id="clients" className="md:px-6 px-4">
             <div className="flex min-h-0 flex-col gap-y-3">
                 <BlurFade delay={BLUR_FADE_DELAY * 9}>
                     <h2 className="text-xl font-bold">Clients</h2>

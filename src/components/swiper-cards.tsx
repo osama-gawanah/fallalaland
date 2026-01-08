@@ -64,7 +64,7 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
             <div className='absolute top-4 left-4 dark:bg-black bg-white px-2 py-1 rounded-full text-xs border pointer-events-none z-30'>
               {name}
             </div>
-            <div className='absolute bottom-4 right-0 z-20 w-full px-6 pointer-events-none'>
+            <div className='absolute bottom-4 right-0 z-20 w-full md:px-6 px-4 pointer-events-none'>
               <Image src={logo} alt={name} quality={100} className='w-full h-full object-contain' width={1000} height={0} />
             </div>
             <Image

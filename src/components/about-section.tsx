@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export function AboutSection() {
   return (
-    <section id="about" className="px-6">
+    <section id="about" className="md:px-6 px-4">
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold tracking-tight leading-tight">
           <span className="text-muted-foreground">We don&apos;t deliver events.</span>

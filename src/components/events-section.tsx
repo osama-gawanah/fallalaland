@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useRef, useEffect, useLayoutEffect } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { flushSync } from "react-dom";
 import BlurFade from "@/components/magicui/blur-fade";
 import { SwiperCards } from "@/components/swiper-cards";
@@ -173,7 +173,7 @@ export function EventsSection() {
         "/events/dammam-integrated-logistics-zone/10.jpg",
         "/events/dammam-integrated-logistics-zone/11.jpg",
         "/events/dammam-integrated-logistics-zone/12.jpg",
-        "/events/dammam-integrated-logistics-zone/13.jpg", 
+        "/events/dammam-integrated-logistics-zone/13.jpg",
         "/events/dammam-integrated-logistics-zone/14.jpg",
       ],
     },
@@ -231,7 +231,7 @@ export function EventsSection() {
 
 
   return (
-    <section id="events" className=" px-6">
+    <section id="events" className=" md:px-6 px-4">
       <div ref={containerRef} className="space-y-12 w-full py-12 ">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">

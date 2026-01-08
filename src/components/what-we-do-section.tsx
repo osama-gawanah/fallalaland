@@ -152,7 +152,7 @@ const services: ServiceCategory[] = [
 
 export function WhatWeDoSection() {
   return (
-    <section id="what-we-do" className="w-full  px-6">
+    <section id="what-we-do" className="w-full  md:px-6 px-4">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Header */}
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
