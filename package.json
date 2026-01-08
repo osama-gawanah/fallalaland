@@ -55,5 +55,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
   },
+  "resolutions": {
+    "libheif-js@github:catdad-experiments/libheif-js": "git+https://github.com/catdad-experiments/libheif-js.git#fe8e9c29440b839910be9dc32e8d2b826c8217ca"
+  },
   "packageManager": "npm@10.0.0"
 }
