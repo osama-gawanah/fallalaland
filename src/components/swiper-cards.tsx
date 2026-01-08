@@ -17,7 +17,7 @@ export function SwiperCards({ data, className }: { data: any, className?: string
             className={cn("mySwiper", className)}
         >
             {photos.map((photo: string, index: number) => (
-                <SwiperSlide className="h-full rounded-xl w-full relative group">
+                <SwiperSlide key={index} className="h-full rounded-xl w-full relative group">
                     <div
                         className="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-20"
                         style={{

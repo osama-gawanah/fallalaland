@@ -3,6 +3,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { Marquee } from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -23,10 +24,12 @@ function ClientCard({ src, alt }: ClientCardProps) {
                 "hover:shadow-lg"
             )}
         >
-            <img
+            <Image
                 src={src}
                 alt={alt}
                 className="h-full w-full object-contain"
+                width={160}
+                height={96}
             />
         </div>
     );
