@@ -22,7 +22,7 @@ interface SwiperCardsProps {
 
 export function SwiperCards({ data, className }: SwiperCardsProps) {
   const { name, logo, photos, bg } = data;
-  
+
   const lightboxIdentifier = useMemo(() => {
     return `lightbox-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
   }, [name]);
@@ -61,7 +61,7 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
                 background: bg === "white" ? 'linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #ffffff9a 83.46%)' : 'linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #0000009a 83.46%)',
               }}
             />
-            <div className='absolute top-4 left-4 dark:bg-black bg-white px-2 py-1 rounded-full text-xs border pointer-events-none z-30'>
+            <div className='absolute top-4 left-4 bg-[#581e97] text-white px-2 py-1 rounded-full text-xs border border-[#8034d0] pointer-events-none z-30'>
               {name}
             </div>
             <div className='absolute bottom-4 right-0 z-20 w-full md:px-6 px-4 pointer-events-none'>
@@ -85,7 +85,7 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
               <div
                 className="absolute top-0 dark:!bg-black !bg-white left-0 right-0 bottom-0 w-full h-full z-20 pointer-events-none"
               />
-              <div 
+              <div
                 className="absolute inset-0 flex items-center justify-center z-30 pointer-events-auto"
                 data-lightboxjs={lightboxIdentifier}
               >

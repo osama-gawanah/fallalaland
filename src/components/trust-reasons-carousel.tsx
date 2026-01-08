@@ -41,16 +41,18 @@ const TrustReasonsCarousel = () => {
                 disabled={position === 0}
                 aria-label="Previous card"
                 size={"icon"}
+                className="bg-[#581e97] hover:bg-[#581e97]/80"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5 text-white" />
               </Button>
               <Button
-              size={"icon"}
+                size={"icon"}
                 onClick={shiftRight}
+                className="bg-[#581e97] hover:bg-[#581e97]/80"
                 disabled={position === DATA.trustReasons.length - 1}
                 aria-label="Next card"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5 text-white" />
               </Button>
             </div>
           </div>
@@ -95,9 +97,8 @@ const TrustReasonCard = ({
         ease: "easeInOut",
         duration: 0.35,
       }}
-      className={`relative rounded-xl  flex min-h-[200px] w-10/12 max-w-lg shrink-0 flex-col justify-between p-8 md:w-3/5 ${
-        index % 2 ? "bg-black text-white  dark:bg-white dark:text-black" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
-      }`}
+      className={`relative rounded-xl  flex min-h-[200px] w-10/12 max-w-lg shrink-0 flex-col justify-between p-8 md:w-3/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
+        }`}
     >
       <Icon className="absolute right-2 top-2 w-32 h-32 opacity-20" />
       <h3 className="mb-8 text-3xl font-bold">{title}</h3>

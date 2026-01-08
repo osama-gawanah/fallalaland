@@ -465,7 +465,7 @@ export function GlobeToMapTransform() {
       </div>
 
       <div className="absolute bottom-4 right-4 flex gap-2 z-10">
-        <Button onClick={handleAnimate} disabled={isAnimating} className="cursor-pointer min-w-[120px] rounded">
+        <Button onClick={handleAnimate} disabled={isAnimating} className="cursor-pointer bg-[#581e97] text-white hover:bg-[#581e97]/80 min-w-[120px] rounded">
           {isAnimating ? "Loading..." : progress[0] === 0 ? "Unroll Globe" : "Roll to Globe"}
         </Button>
         <Button

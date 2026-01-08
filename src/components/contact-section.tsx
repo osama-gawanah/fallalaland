@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
 
-export function ContactSection() {
+export function   ContactSection() {
   return (
     <section id="contact" className="w-full  md:px-6 px-4 pt-20 relative flex flex-col justify-center items-center overflow-visible">
       <div className="absolute inset-0 top-[-90px]">
@@ -107,7 +107,7 @@ export function ContactSection() {
       <div className="grid items-center justify-center gap-4 px-4 text-center md:md:px-6 px-4 w-full py-12">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <div className="space-y-3">
-            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+            <div className="inline-block rounded-lg bg-[#581e97] text-white px-3 py-1 text-sm">
               Contact
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -117,7 +117,7 @@ export function ContactSection() {
               Want to chat? Just shoot me a message{" "}
               <Link
                 href={DATA.contact.social.WhatsApp.url}
-                className="text-blue-500 hover:underline"
+                className="text-[#581e97] dark:text-white hover:underline"
               >
                 on WhatsApp
               </Link>{" "}

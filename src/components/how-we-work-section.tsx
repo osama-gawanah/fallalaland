@@ -90,8 +90,8 @@ function StepCard({ step, index }: StepCardProps) {
           )}
         >
           {/* Number Badge */}
-          <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-br from-foreground to-foreground/80 flex items-center justify-center shadow-lg">
-            <span className="text-2xl font-bold text-background">{step.number}</span>
+          <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-[#581e97] text-white flex items-center justify-center shadow-lg">
+            <span className="text-2xl font-bold">{step.number}</span>
           </div>
 
           {/* Content */}
@@ -126,7 +126,7 @@ export function HowWeWorkSection() {
         <BlurFade delay={BLUR_FADE_DELAY * 12}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm font-medium">
+              <div className="inline-block rounded-lg bg-[#581e97] text-white px-3 py-1 text-sm font-medium">
                 Process
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

@@ -216,3 +216,6 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   stroke: hsl(var(--border));
 }
 
+.cls-1{
+  @apply dark:fill-white fill-[#2d1959];
+}
