@@ -48,10 +48,6 @@ const data = [
         alt: "",
     },
     {
-        src: "/clients/4.png",
-        alt: "",
-    },
-    {
         src: "/clients/5.webp",
         alt: "",
     },

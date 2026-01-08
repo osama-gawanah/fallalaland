@@ -47,38 +47,27 @@ export const DATA = {
   ],
   contact: {
     email: "osama.gawanah@gmail.com",
-    tel: "+972567008908",
+    tel: "+966550152187",
     social: {
       WhatsApp: {
         name: "WhatsApp",
-        url: "https://wa.me/972567008908",
+        url: "https://wa.me/966550152187",
         icon: Icons.whatsapp,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/osama-jawana/",
+        url: "https://www.linkedin.com/company/fallalaland/?originalSubdomain=sa",
         icon: Icons.linkedin,
         navbar: true,
       },
-      // Freelance: {
-      //   name: "Freelance",
-      //   url: "#",
-      //   icon: Icons.globe,
-      //   navbar: true,
-      // },
-      // Mostaql: {
-      //   name: "Mostaql",
-      //   url: "#",
-      //   icon: Icons.globe,
-      //   navbar: true,
-      // },
-      // Khamsat: {
-      //   name: "Khamsat",
-      //   url: "#",
-      //   icon: Icons.globe,
-      //   navbar: true,
-      // },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/fallalaland/",
+        icon: Icons.instagram,
+        navbar: true,
+      },
+
       email: {
         name: "Send Email",
         url: "mailto:osama.gawanah@gmail.com",
