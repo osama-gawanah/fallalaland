@@ -24,7 +24,7 @@ export function SwiperCards({ data, className }: { data: any, className?: string
                             background: bg === "white" ? 'linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #ffffff9a 83.46%)' : 'linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #0000009a 83.46%)',
                         }}
                     />
-                    <div className=' absolute top-4 left-4 bg-white px-2 py-1 rounded-full text-xs border'>
+                    <div className='absolute top-4 left-4 dark:bg-black bg-white px-2 py-1 rounded-full text-xs border'>
                         {name}
                     </div>
                     <div className=' absolute bottom-4 right-0 z-20 w-full px-6'>
