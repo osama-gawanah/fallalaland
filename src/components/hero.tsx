@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section className="relative md:px-6 px-4">
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
-        <div className=" -mt-12 mb-10">
+        <div className=" md:-mt-12 mb-10">
           <svg id="Layer_1" width={180} data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.68 154.27">
             <g>
               <path className="cls-1" d="m36.65,102.05v-8.84H0v59.86h10.6v-25.57h22.12v-8.91H10.6v-16.54h26.05Z" />
@@ -46,7 +46,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-          className="mt-3 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
+          className="mt-3 text-center text-5xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
         >
           <motion.span
             initial={{ opacity: 0, y: 20 }}

@@ -104,7 +104,7 @@ export function   ContactSection() {
           </defs>
         </svg>
       </div>
-      <div className="grid items-center justify-center gap-4 px-4 text-center md:md:px-6 px-4 w-full py-12">
+      <div className="grid items-center justify-center gap-4 px-4 text-center md:md:px-6 w-full py-12">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <div className="space-y-3">
             <div className="inline-block rounded-lg bg-[#581e97] text-white px-3 py-1 text-sm">
