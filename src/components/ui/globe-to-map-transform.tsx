@@ -190,6 +190,49 @@ export function GlobeToMapTransform() {
     setIsDragging(false)
   }
 
+  const handleTouchStart = (event: React.TouchEvent) => {
+    event.preventDefault()
+    setIsDragging(true)
+    const rect = svgRef.current?.getBoundingClientRect()
+    if (rect && event.touches.length > 0) {
+      const touch = event.touches[0]
+      setLastMouse([touch.clientX - rect.left, touch.clientY - rect.top])
+    }
+  }
+
+  const handleTouchMove = (event: React.TouchEvent) => {
+    if (!isDragging) return
+    event.preventDefault()
+
+    const rect = svgRef.current?.getBoundingClientRect()
+    if (!rect || event.touches.length === 0) return
+
+    const touch = event.touches[0]
+    const currentMouse = [touch.clientX - rect.left, touch.clientY - rect.top]
+    const dx = currentMouse[0] - lastMouse[0]
+    const dy = currentMouse[1] - lastMouse[1]
+
+    const t = progress[0] / 100
+
+    if (t < 0.5) {
+      // Globe mode - rotate
+      const sensitivity = 0.5
+      // NOTE: flip horizontal sign so dragging right rotates globe to the right
+      setRotation((prev) => [prev[0] + dx * sensitivity, Math.max(-90, Math.min(90, prev[1] - dy * sensitivity))])
+    } else {
+      // Map mode - rotate the projection (not simple pan)
+      // This updates the projection.rotate(...) used when in equirectangular mode.
+      const sensitivityMap = 0.25 // lower sensitivity for longitude/latitude rotation
+      setRotation((prev) => [prev[0] + dx * sensitivityMap, Math.max(-90, Math.min(90, prev[1] - dy * sensitivityMap))])
+    }
+
+    setLastMouse(currentMouse)
+  }
+
+  const handleTouchEnd = () => {
+    setIsDragging(false)
+  }
+
   const handleZoomIn = () => {
     setZoomLevel((prev) => Math.min(3, prev * 1.2))
   }
@@ -377,12 +420,16 @@ export function GlobeToMapTransform() {
       <svg
         ref={svgRef}
         viewBox={`0 0 ${width} ${height}`}
-        className="w-full h-full border rounded-lg bg-transparent cursor-grab active:cursor-grabbing"
+        className="w-full h-full border rounded-lg bg-transparent cursor-grab active:cursor-grabbing touch-none"
         preserveAspectRatio="xMidYMid meet"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onTouchCancel={handleTouchEnd}
       />
       {/* City tooltip - shown on hover */}
       {hoveredCity && tooltipPosition && (
