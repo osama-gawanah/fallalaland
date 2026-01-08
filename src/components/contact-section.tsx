@@ -75,9 +75,9 @@ export function   ContactSection() {
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(683.482 245.884) rotate(-3.78676) scale(469.009 248.4)"
             >
-              <stop offset="0.1294" stopColor="hsl(210, 100%, 45%)" />
-              <stop offset="0.2347" stopColor="hsl(210, 100%, 50%)" />
-              <stop offset="0.3" stopColor="hsl(210, 100%, 50%)" stopOpacity="0" />
+              <stop offset="0.1294" stopColor="#581e97" />
+              <stop offset="0.2347" stopColor="#581e97" />
+              <stop offset="0.3" stopColor="#581e97" stopOpacity="0" />
             </radialGradient>
             <linearGradient
               id="paint2_linear_182_1049"

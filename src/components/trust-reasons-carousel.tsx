@@ -100,7 +100,7 @@ const TrustReasonCard = ({
       className={`relative rounded-xl  flex min-h-[200px] w-10/12 max-w-lg shrink-0 flex-col justify-between p-8 md:w-3/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
         }`}
     >
-      <Icon className="absolute right-2 top-2 w-32 h-32 opacity-20" />
+      <Icon className="absolute right-2 top-2 w-32 h-32 opacity-20 stroke-[#7f1dfe]" />
       <h3 className="mb-8 text-3xl font-bold">{title}</h3>
       <p>{description}</p>
     </motion.div>

@@ -29,10 +29,10 @@ export function EventsSection() {
       logo: "/events/amiviz-booth-managment/logo.svg",
       bg: "white",
       photos: [
+        "/events/amiviz-booth-managment/4.jpg",
         "/events/amiviz-booth-managment/1.jpg",
         "/events/amiviz-booth-managment/2.jpg",
         "/events/amiviz-booth-managment/3.jpg",
-        "/events/amiviz-booth-managment/4.jpg",
       ],
     },
     {
@@ -57,12 +57,8 @@ export function EventsSection() {
         "/events/modern-construction-saudi-build/1.jpg",
         "/events/modern-construction-saudi-build/2.jpg",
         "/events/modern-construction-saudi-build/3.jpg",
-        "/events/modern-construction-saudi-build/4.jpg",
-        "/events/modern-construction-saudi-build/5.jpg",
         "/events/modern-construction-saudi-build/6.jpg",
-        "/events/modern-construction-saudi-build/7.jpg",
         "/events/modern-construction-saudi-build/8.jpg",
-        "/events/modern-construction-saudi-build/9.jpg",
 
       ],
     },
@@ -98,6 +94,7 @@ export function EventsSection() {
       logo: "/events/saudi-global-port-founding-day/logo.svg",
       bg: "dark",
       photos: [
+        "/events/saudi-global-port-founding-day/8.jpg",
         "/events/saudi-global-port-founding-day/1.jpg",
         "/events/saudi-global-port-founding-day/2.jpg",
         "/events/saudi-global-port-founding-day/3.jpg",
@@ -105,7 +102,7 @@ export function EventsSection() {
         "/events/saudi-global-port-founding-day/5.jpg",
         "/events/saudi-global-port-founding-day/6.jpg",
         "/events/saudi-global-port-founding-day/7.jpg",
-        "/events/saudi-global-port-founding-day/8.jpg",
+
       ],
     },
     {
@@ -113,6 +110,7 @@ export function EventsSection() {
       logo: "/events/saudi-global-port-riyadh-ramadan-iftar/logo.svg",
       bg: "dark",
       photos: [
+        "/events/saudi-global-port-riyadh-ramadan-iftar/12.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/1.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/2.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/3.jpg",
@@ -124,7 +122,6 @@ export function EventsSection() {
         "/events/saudi-global-port-riyadh-ramadan-iftar/9.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/10.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/11.jpg",
-        "/events/saudi-global-port-riyadh-ramadan-iftar/12.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/13.jpg",
       ],
     },
@@ -133,8 +130,8 @@ export function EventsSection() {
       logo: "/events/summer-refreshments-party/logo.svg",
       bg: "dark",
       photos: [
-        "/events/summer-refreshments-party/1.jpg",
         "/events/summer-refreshments-party/2.jpg",
+        "/events/summer-refreshments-party/1.jpg",
         "/events/summer-refreshments-party/3.jpg",
       ],
     },
@@ -161,8 +158,8 @@ export function EventsSection() {
       logo: "/events/dammam-integrated-logistics-zone/logo.svg",
       bg: "dark",
       photos: [
-        "/events/dammam-integrated-logistics-zone/1.jpg",
         "/events/dammam-integrated-logistics-zone/2.jpg",
+        "/events/dammam-integrated-logistics-zone/1.jpg",
         "/events/dammam-integrated-logistics-zone/3.jpg",
         "/events/dammam-integrated-logistics-zone/4.jpg",
         "/events/dammam-integrated-logistics-zone/5.jpg",
