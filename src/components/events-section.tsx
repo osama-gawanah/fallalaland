@@ -3,9 +3,16 @@ import { SwiperCards } from "@/components/swiper-cards";
 
 const BLUR_FADE_DELAY = 0.04;
 
+interface EventData {
+  name: string;
+  logo: string;
+  bg: "white" | "dark";
+  photos: string[];
+}
+
 export function EventsSection() {
 
-  const data = [
+  const data: EventData[] = [
     {
       name: "AMIVIZ Black Hat.",
       logo: "/events/amiviz-booth-managment/logo.svg",
