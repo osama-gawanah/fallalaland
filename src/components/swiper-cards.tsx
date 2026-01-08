@@ -35,7 +35,7 @@ export function SwiperCards({ data, className }: SwiperCardsProps) {
   }, [photos, name]);
 
   const displayedPhotos = useMemo(() => {
-    return photos.length > 4 ? photos.slice(0, 3) : photos;
+    return photos.length > 3 ? photos.slice(0, 3) : photos;
   }, [photos]);
 
   const hasMorePhotos = photos.length > 3;
