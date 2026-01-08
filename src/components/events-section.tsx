@@ -149,6 +149,27 @@ export function EventsSection() {
         "/events/value-expert/11.jpg",
       ],
     },
+    {
+      name: "Dammam Integrated Logistics Zone.",
+      logo: "/events/dammam-integrated-logistics-zone/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/dammam-integrated-logistics-zone/1.jpg",
+        "/events/dammam-integrated-logistics-zone/2.jpg",
+        "/events/dammam-integrated-logistics-zone/3.jpg",
+        "/events/dammam-integrated-logistics-zone/4.jpg",
+        "/events/dammam-integrated-logistics-zone/5.jpg",
+        "/events/dammam-integrated-logistics-zone/6.jpg",
+        "/events/dammam-integrated-logistics-zone/7.jpg",
+        "/events/dammam-integrated-logistics-zone/8.jpg",
+        "/events/dammam-integrated-logistics-zone/9.jpg",
+        "/events/dammam-integrated-logistics-zone/10.jpg",
+        "/events/dammam-integrated-logistics-zone/11.jpg",
+        "/events/dammam-integrated-logistics-zone/12.jpg",
+        "/events/dammam-integrated-logistics-zone/13.jpg", 
+        "/events/dammam-integrated-logistics-zone/14.jpg",
+      ],
+    },
   ];
 
 
