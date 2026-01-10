@@ -28,7 +28,7 @@ const TrustReasonsCarousel = () => {
     <section id="why-trust-us" className="overflow-hidden pt-4 pl-6">
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <div className="mb-12 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="mb-12 flex md:flex-col flex-row justify-between items-start sm:items-center gap-4">
             <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold tracking-tight leading-tight">
               <span className="text-muted-foreground">Why clients </span>
               <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
@@ -97,11 +97,11 @@ const TrustReasonCard = ({
         ease: "easeInOut",
         duration: 0.35,
       }}
-      className={`relative rounded-xl  flex min-h-[200px] w-10/12 max-w-lg shrink-0 flex-col justify-between p-8 md:w-3/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
+      className={`relative rounded-xl  flex md:min-h-[200px] min-h-[150px] w-8/12 max-w-lg shrink-0 flex-col justify-between md:p-8 p-4 md:w-3/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
         }`}
     >
       <Icon className="absolute right-2 top-2 w-32 h-32 opacity-20 stroke-[#7f1dfe]" />
-      <h3 className="mb-8 text-3xl font-bold">{title}</h3>
+      <h3 className="mb-8 md:text-3xl text-2xl font-bold">{title}</h3>
       <p>{description}</p>
     </motion.div>
   );

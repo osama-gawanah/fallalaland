@@ -13,7 +13,7 @@ export function HeroSection() {
         <div className="gap-2 flex justify-between">
           <div className="flex-col flex flex-1 space-y-1.5">
 
-            <div className="flex items-center gap-1">
+            <div className="flex flex-wrap items-center gap-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold  sm:text-3xl mt-3 leading-none xl:text-5xl/none"

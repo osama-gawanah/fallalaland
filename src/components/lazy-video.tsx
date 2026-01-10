@@ -65,11 +65,11 @@ export default function LazyVideo({
         } else if (!entry.isIntersecting && loaded && shouldAutoplay) {
           try {
             el.pause()
-          } catch {}
+          } catch { }
         } else if (entry.isIntersecting && loaded && shouldAutoplay) {
           try {
             await el.play()
-          } catch {}
+          } catch { }
         }
       })
     }
@@ -86,10 +86,10 @@ export default function LazyVideo({
       if (hidden) {
         try {
           el.pause()
-        } catch {}
+        } catch { }
       } else if (shouldAutoplay && loaded) {
         // resume only if we were auto-playing
-        el.play().catch(() => {})
+        el.play().catch(() => { })
       }
     }
     document.addEventListener("visibilitychange", onVisibility)

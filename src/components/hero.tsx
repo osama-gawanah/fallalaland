@@ -138,7 +138,7 @@ function PhoneCard({
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="relative rounded-[28px] glass-border bg-neutral-900 p-2"
     >
-      <div className="relative aspect-[4/7] w-full overflow-hidden rounded-2xl bg-black">
+      <div className="relative aspect-[4/6] w-full overflow-hidden rounded-2xl bg-black">
         <LazyVideo
           src={
             videoSrc ??
@@ -180,13 +180,15 @@ const phoneData = [
     tone: "results",
     gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
     videoSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20new%20chapter%20in%20the%20story%20of%20success.__Introducing%20the%20new%20TAG%20Heuer%20Carrera%20Day-Date%20collection%2C%20reimagined%20with%20bold%20colors%2C%20refined%20finishes%2C%20and%20upgraded%20functionality%20to%20keep%20you%20focused%20on%20your%20goals.%20__Six%20-nDNoRQyFaZ8oaaoty4XaQz8W8E5bqA.mp4",
+      "/videos/6.mp4",
   },
   {
     title: "Speed",
     sub: "Launch in days, not weeks.",
     tone: "speed",
     gradient: "from-[#0b1a0b] via-[#052e16] to-[#022c22]",
+    videoSrc:
+    "/videos/3.mp4",
   },
 
 ]
