@@ -28,7 +28,7 @@ const TrustReasonsCarousel = () => {
     <section id="why-trust-us" className="overflow-hidden pt-4 pl-6">
       <div className="mx-auto max-w-6xl">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <div className="mb-12 flex md:flex-col flex-row justify-between items-start sm:items-center gap-4">
+          <div className="mb-12 flex flex-row justify-between items-start sm:items-center gap-4">
             <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold tracking-tight leading-tight">
               <span className="text-muted-foreground">Why clients </span>
               <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
