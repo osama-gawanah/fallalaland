@@ -66,7 +66,7 @@ const services: ServiceCategory[] = [
     gradient: "from-blue-500/20 via-cyan-500/20 to-teal-500/20",
     iconGradient: "from-blue-500 to-cyan-500",
     glowColor: "blue",
-    bgColor: "bg-blue-800",
+    bgColor: "bg-[#2e015c]",
     items: [
       { name: "Lighting & sound", icon: Lightbulb },
       { name: "Venue flow", icon: MapPin },
@@ -80,22 +80,7 @@ const services: ServiceCategory[] = [
       { name: "Translation Services", icon: Languages },
     ],
   },
-  {
-    id: 2,
-    title: "Games and Activities",
-    icon: Gamepad2,
-    gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
-    iconGradient: "from-purple-500 to-pink-500",
-    glowColor: "purple",
-    bgColor: "bg-purple-800",
-    items: [
-      { name: "Table & Board games", icon: Table2 },
-      { name: "Inflatable Games", icon: Package },
-      { name: "Giant Games", icon: Box },
-      { name: "PS5 & Kinect Games", icon: Gamepad2 },
-      { name: "Indoor & Outdoor Activities", icon: Home },
-    ],
-  },
+
   {
     id: 3,
     title: "Branding",
@@ -103,7 +88,7 @@ const services: ServiceCategory[] = [
     gradient: "from-orange-500/20 via-amber-500/20 to-yellow-500/20",
     iconGradient: "from-orange-500 to-amber-500",
     glowColor: "orange",
-    bgColor: "bg-orange-800",
+    bgColor: "bg-[#dd129f]",
     items: [
       { name: "Story boarding", icon: Image },
       { name: "Motion graphics", icon: Monitor },
@@ -115,13 +100,29 @@ const services: ServiceCategory[] = [
     ],
   },
   {
+    id: 2,
+    title: "Games and Activities",
+    icon: Gamepad2,
+    gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
+    iconGradient: "from-purple-500 to-pink-500",
+    glowColor: "purple",
+    bgColor: "bg-[#571e9a]",
+    items: [
+      { name: "Table & Board games", icon: Table2 },
+      { name: "Inflatable Games", icon: Package },
+      { name: "Giant Games", icon: Box },
+      { name: "PS5 & Kinect Games", icon: Gamepad2 },
+      { name: "Indoor & Outdoor Activities", icon: Home },
+    ],
+  },
+  {
     id: 4,
     title: "Guest Experience",
     icon: Users,
     gradient: "from-emerald-500/20 via-green-500/20 to-lime-500/20",
     iconGradient: "from-emerald-500 to-green-500",
     glowColor: "emerald",
-    bgColor: "bg-emerald-800",
+    bgColor: "bg-[#00076f]",
     items: [
       { name: "Ushers & hosts", icon: UserCheck },
       { name: "Registration", icon: ClipboardCheck },
@@ -140,7 +141,7 @@ const services: ServiceCategory[] = [
     gradient: "from-indigo-500/20 via-violet-500/20 to-purple-500/20",
     iconGradient: "from-indigo-500 to-violet-500",
     glowColor: "indigo",
-    bgColor: "bg-indigo-800",
+    bgColor: "bg-[#7f1dfe]",
     items: [
       { name: "Booths", icon: Box },
       { name: "Installations", icon: Hammer },

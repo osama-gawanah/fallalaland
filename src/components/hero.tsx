@@ -188,7 +188,7 @@ const phoneData = [
     tone: "speed",
     gradient: "from-[#0b1a0b] via-[#052e16] to-[#022c22]",
     videoSrc:
-    "/videos/3.mp4",
+    "/videos/2.mp4",
   },
 
 ]
