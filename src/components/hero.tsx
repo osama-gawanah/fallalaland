@@ -92,7 +92,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeIn", delay: 0.2 }}
-          className="mt-10 grid w-full gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2"
+          className="mt-10 grid w-full gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-1"
         >
           {phoneData.map((p, i) => {
             const visibility = i <= 2 ? "block" : i === 3 ? "hidden md:block" : i === 4 ? "hidden xl:block" : "hidden"
@@ -138,7 +138,7 @@ function PhoneCard({
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="relative rounded-[28px] glass-border bg-neutral-900 p-2"
     >
-      <div className="relative aspect-[4/6] w-full overflow-hidden rounded-2xl bg-black">
+      <div className="relative aspect-[4/4] w-full overflow-hidden rounded-2xl bg-black">
         <LazyVideo
           src={
             videoSrc ??
@@ -182,13 +182,6 @@ const phoneData = [
     videoSrc:
       "/videos/6.mp4",
   },
-  {
-    title: "Speed",
-    sub: "Launch in days, not weeks.",
-    tone: "speed",
-    gradient: "from-[#0b1a0b] via-[#052e16] to-[#022c22]",
-    videoSrc:
-    "/videos/2.mp4",
-  },
+
 
 ]
