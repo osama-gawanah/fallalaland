@@ -40,6 +40,14 @@ const data = [
         alt: "",
     },
     {
+        src: "/events/nour-net-black-hat/logo.svg",
+        alt: "",
+    },
+    {
+        src: "/events/dammam-integrated-logistics-zone/logo.svg",
+        alt: "",  
+    },
+    {
         src: "/clients/1.webp",
         alt: "",
     },
