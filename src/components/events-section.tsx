@@ -25,6 +25,27 @@ export function EventsSection() {
 
   const data: EventData[] = [
     {
+      name: "Dammam Integrated Logistics Zone.",
+      logo: "/events/dammam-integrated-logistics-zone/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/dammam-integrated-logistics-zone/2.jpg",
+        "/events/dammam-integrated-logistics-zone/1.jpg",
+        "/events/dammam-integrated-logistics-zone/3.jpg",
+        "/events/dammam-integrated-logistics-zone/4.jpg",
+        "/events/dammam-integrated-logistics-zone/5.jpg",
+        "/events/dammam-integrated-logistics-zone/6.jpg",
+        "/events/dammam-integrated-logistics-zone/7.jpg",
+        "/events/dammam-integrated-logistics-zone/8.jpg",
+        "/events/dammam-integrated-logistics-zone/9.jpg",
+        "/events/dammam-integrated-logistics-zone/10.jpg",
+        "/events/dammam-integrated-logistics-zone/11.jpg",
+        "/events/dammam-integrated-logistics-zone/12.jpg",
+        "/events/dammam-integrated-logistics-zone/13.jpg",
+        "/events/dammam-integrated-logistics-zone/14.jpg",
+      ],
+    },
+    {
       name: "AMIVIZ Black Hat.",
       logo: "/events/amiviz-booth-managment/logo.svg",
       bg: "white",
@@ -63,49 +84,6 @@ export function EventsSection() {
       ],
     },
     {
-      name: "Nour Net Black Hat.",
-      logo: "/events/nour-net-black-hat/logo.svg",
-      bg: "dark",
-      photos: [
-        "/events/nour-net-black-hat/1.jpg",
-        "/events/nour-net-black-hat/2.jpg",
-        "/events/nour-net-black-hat/3.jpg",
-        "/events/nour-net-black-hat/4.jpg",
-        "/events/nour-net-black-hat/5.jpg",
-        "/events/nour-net-black-hat/6.jpg",
-        "/events/nour-net-black-hat/7.jpg",
-        "/events/nour-net-black-hat/8.jpg",
-
-      ],
-    },
-    {
-      name: "Nour Net Leap.",
-      logo: "/events/nour-net-leap/logo.svg",
-      bg: "dark",
-      photos: [
-        "/events/nour-net-leap/1.jpg",
-        "/events/nour-net-leap/2.jpg",
-        "/events/nour-net-leap/3.jpg",
-
-      ],
-    },
-    {
-      name: "SGP Founding Day.",
-      logo: "/events/saudi-global-port-founding-day/logo.svg",
-      bg: "dark",
-      photos: [
-        "/events/saudi-global-port-founding-day/8.jpg",
-        "/events/saudi-global-port-founding-day/1.jpg",
-        "/events/saudi-global-port-founding-day/2.jpg",
-        "/events/saudi-global-port-founding-day/3.jpg",
-        "/events/saudi-global-port-founding-day/4.jpg",
-        "/events/saudi-global-port-founding-day/5.jpg",
-        "/events/saudi-global-port-founding-day/6.jpg",
-        "/events/saudi-global-port-founding-day/7.jpg",
-
-      ],
-    },
-    {
       name: "SGP Ramadan Iftar.",
       logo: "/events/saudi-global-port-riyadh-ramadan-iftar/logo.svg",
       bg: "dark",
@@ -123,6 +101,51 @@ export function EventsSection() {
         "/events/saudi-global-port-riyadh-ramadan-iftar/10.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/11.jpg",
         "/events/saudi-global-port-riyadh-ramadan-iftar/13.jpg",
+      ],
+    },
+    {
+      name: "Nour Net Black Hat.",
+      logo: "/events/nour-net-black-hat/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/nour-net-black-hat/1.jpg",
+        "/events/nour-net-black-hat/2.jpg",
+        "/events/nour-net-black-hat/3.jpg",
+        "/events/nour-net-black-hat/4.jpg",
+        "/events/nour-net-black-hat/5.jpg",
+        "/events/nour-net-black-hat/6.jpg",
+        "/events/nour-net-black-hat/7.jpg",
+        "/events/nour-net-black-hat/8.jpg",
+
+      ],
+    },
+
+    {
+      name: "SGP Founding Day.",
+      logo: "/events/saudi-global-port-founding-day/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/saudi-global-port-founding-day/8.jpg",
+        "/events/saudi-global-port-founding-day/1.jpg",
+        "/events/saudi-global-port-founding-day/2.jpg",
+        "/events/saudi-global-port-founding-day/3.jpg",
+        "/events/saudi-global-port-founding-day/4.jpg",
+        "/events/saudi-global-port-founding-day/5.jpg",
+        "/events/saudi-global-port-founding-day/6.jpg",
+        "/events/saudi-global-port-founding-day/7.jpg",
+
+      ],
+    },
+
+    {
+      name: "Nour Net Leap.",
+      logo: "/events/nour-net-leap/logo.svg",
+      bg: "dark",
+      photos: [
+        "/events/nour-net-leap/1.jpg",
+        "/events/nour-net-leap/2.jpg",
+        "/events/nour-net-leap/3.jpg",
+
       ],
     },
     {
@@ -153,27 +176,7 @@ export function EventsSection() {
         "/events/value-expert/11.jpg",
       ],
     },
-    {
-      name: "Dammam Integrated Logistics Zone.",
-      logo: "/events/dammam-integrated-logistics-zone/logo.svg",
-      bg: "dark",
-      photos: [
-        "/events/dammam-integrated-logistics-zone/2.jpg",
-        "/events/dammam-integrated-logistics-zone/1.jpg",
-        "/events/dammam-integrated-logistics-zone/3.jpg",
-        "/events/dammam-integrated-logistics-zone/4.jpg",
-        "/events/dammam-integrated-logistics-zone/5.jpg",
-        "/events/dammam-integrated-logistics-zone/6.jpg",
-        "/events/dammam-integrated-logistics-zone/7.jpg",
-        "/events/dammam-integrated-logistics-zone/8.jpg",
-        "/events/dammam-integrated-logistics-zone/9.jpg",
-        "/events/dammam-integrated-logistics-zone/10.jpg",
-        "/events/dammam-integrated-logistics-zone/11.jpg",
-        "/events/dammam-integrated-logistics-zone/12.jpg",
-        "/events/dammam-integrated-logistics-zone/13.jpg",
-        "/events/dammam-integrated-logistics-zone/14.jpg",
-      ],
-    },
+
   ];
 
   const currentEvents = useMemo(() => {

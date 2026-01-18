@@ -36,6 +36,10 @@ function ClientCard({ src, alt }: ClientCardProps) {
 }
 const data = [
     {
+        src: "/events/amiviz-booth-managment/logo.svg",
+        alt: "",
+    },
+    {
         src: "/clients/1.webp",
         alt: "",
     },

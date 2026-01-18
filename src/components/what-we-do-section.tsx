@@ -64,7 +64,7 @@ const services: ServiceCategory[] = [
     title: "Event Production",
     icon: Video,
     gradient: "from-blue-500/20 via-cyan-500/20 to-teal-500/20",
-    iconGradient: "from-blue-500 to-cyan-500",
+    iconGradient: "from-purple-500 to-violet-500",
     glowColor: "blue",
     bgColor: "bg-[#2e015c]",
     items: [
@@ -86,7 +86,7 @@ const services: ServiceCategory[] = [
     title: "Branding",
     icon: Palette,
     gradient: "from-orange-500/20 via-amber-500/20 to-yellow-500/20",
-    iconGradient: "from-orange-500 to-amber-500",
+    iconGradient: "from-violet-500 to-purple-600",
     glowColor: "orange",
     bgColor: "bg-[#dd129f]",
     items: [
@@ -104,7 +104,7 @@ const services: ServiceCategory[] = [
     title: "Games and Activities",
     icon: Gamepad2,
     gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
-    iconGradient: "from-purple-500 to-pink-500",
+    iconGradient: "from-purple-600 to-pink-500",
     glowColor: "purple",
     bgColor: "bg-[#571e9a]",
     items: [
@@ -120,7 +120,7 @@ const services: ServiceCategory[] = [
     title: "Guest Experience",
     icon: Users,
     gradient: "from-emerald-500/20 via-green-500/20 to-lime-500/20",
-    iconGradient: "from-emerald-500 to-green-500",
+    iconGradient: "from-indigo-500 to-purple-500",
     glowColor: "emerald",
     bgColor: "bg-[#00076f]",
     items: [
@@ -139,7 +139,7 @@ const services: ServiceCategory[] = [
     title: "Fabrication",
     icon: Hammer,
     gradient: "from-indigo-500/20 via-violet-500/20 to-purple-500/20",
-    iconGradient: "from-indigo-500 to-violet-500",
+    iconGradient: "from-purple-500 to-indigo-500",
     glowColor: "indigo",
     bgColor: "bg-[#7f1dfe]",
     items: [

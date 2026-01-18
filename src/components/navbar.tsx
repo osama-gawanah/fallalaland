@@ -1,5 +1,4 @@
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -61,10 +60,6 @@ export default function Navbar() {
               </Tooltip>
             </DockIcon>
           ))}
-        <Separator orientation="vertical" className="h-full py-2" />
-        <DockIcon>
-        <AnimatedThemeToggler />
-        </DockIcon>
       </Dock>
     </div>
   );

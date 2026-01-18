@@ -20,8 +20,8 @@ export function HeroSection() {
                 yOffset={8}
                 text={`Welcome to  `}
               />
-              <Highlighter action="highlight" className="text-3xl leading-none font-bold sm:text-3xl xl:text-5xl/none"
-                color="#FF9800">
+              <Highlighter action="highlight" className="text-3xl leading-none text-white font-bold sm:text-3xl xl:text-5xl/none"
+                color="#581e97">
                 Fallalaland 👋
               </Highlighter>
             </div>
