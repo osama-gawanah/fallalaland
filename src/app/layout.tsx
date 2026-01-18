@@ -12,15 +12,15 @@ import 'swiper/css/effect-cards';
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: "Fallalaland",
+    template: `%s | Fallalaland`,
   },
   description: DATA.description,
   openGraph: {
-    title: `${DATA.name}`,
+    title: `Fallalaland`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: `Fallalaland`,
     locale: "en_US",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `Fallalaland`,
     card: "summary_large_image",
   },
   verification: {
