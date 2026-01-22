@@ -21,7 +21,7 @@ export function MapSection() {
           </div>
         </div>
       </BlurFade>
-      <div className="relative flex flex-col h-[500px] w-full items-stretch gap-2 overflow-clip bg-gray-50 dark:bg-neutral-950">
+      <div className="relative flex flex-col h-[500px] md:h-[800px] w-full items-stretch gap-2 overflow-clip bg-gray-50 dark:bg-neutral-950">
         <GlobeToMapTransform />
       </div>
     </section>

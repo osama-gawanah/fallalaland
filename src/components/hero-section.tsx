@@ -9,7 +9,7 @@ const BLUR_FADE_DELAY = 0.04;
 export function HeroSection() {
   return (
     <section id="hero" className="md:px-6 px-4">
-      <div className="mx-auto w-full max-w-2xl space-y-8">
+      <div className="mx-auto w-full space-y-8">
         <div className="gap-2 flex justify-between">
           <div className="flex-col flex flex-1 space-y-1.5">
 
@@ -27,7 +27,7 @@ export function HeroSection() {
             </div>
 
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Markdown className="prose  max-w-[600px] dark:text-muted-foreground text-black md:text-xl">
+              <Markdown className="prose dark:text-muted-foreground text-black md:text-xl">
                 {DATA.description}
               </Markdown>
             </BlurFade>

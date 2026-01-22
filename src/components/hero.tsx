@@ -92,10 +92,10 @@ export function Hero() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeIn", delay: 0.2 }}
-          className="mt-10 grid w-full gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-1"
+          className="mt-10 grid w-full gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2"
         >
           {phoneData.map((p, i) => {
-            const visibility = i <= 2 ? "block" : i === 3 ? "hidden md:block" : i === 4 ? "hidden xl:block" : "hidden"
+            const visibility = i === 0 ? "block" : "hidden md:block"
 
             return (
               <motion.div
@@ -138,7 +138,7 @@ function PhoneCard({
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="relative rounded-[28px] glass-border bg-neutral-900 p-2"
     >
-      <div className="relative aspect-[4/4] w-full overflow-hidden rounded-2xl bg-black">
+      <div className="relative aspect-[8/6] w-full overflow-hidden rounded-2xl bg-black">
         <LazyVideo
           src={
             videoSrc ??
@@ -152,22 +152,6 @@ function PhoneCard({
           aria-label={`${title} - ${sub}`}
         />
 
-        {/* <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
-          className="relative z-10 p-3"
-        >
-          <div className="mx-auto mb-3 h-1.5 w-16 rounded-full bg-white/20" />
-          <div className="space-y-1 px-1">
-            <div className="text-3xl font-bold leading-snug text-white/90">{title}</div>
-            <p className="text-xs text-white/70">{sub}</p>
-            <div className="mt-3 inline-flex items-center rounded-full bg-black/40 px-2 py-0.5 text-[10px] uppercase tracking-wider text-lime-300">
-              {tone === "calm" ? "skitbit app" : tone}
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </motion.div>
   )
@@ -183,5 +167,12 @@ const phoneData = [
       "/videos/6.mp4",
   },
 
-
+  {
+    title: "Conversions",
+    sub: "Turn clicks into paying customers.",
+    tone: "results",
+    gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
+    videoSrc:
+      "/videos/4.mp4",
+  },
 ]
