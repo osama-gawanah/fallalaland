@@ -66,7 +66,7 @@ export default function Navbar() {
           <Tooltip>
             <TooltipTrigger asChild>
               {/* <AnimatedThemeToggler/> */}
-              <ModeToggle/>
+              <ModeToggle />
             </TooltipTrigger>
             <TooltipContent>
               <p>Toggle theme</p>
