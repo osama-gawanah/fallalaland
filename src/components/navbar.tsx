@@ -10,6 +10,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
+import { AnimatedThemeToggler } from "./ui/animated-theme-toggler";
 
 export default function Navbar() {
   return (
@@ -65,7 +66,7 @@ export default function Navbar() {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <ModeToggle/>
+              <AnimatedThemeToggler/>
             </TooltipTrigger>
             <TooltipContent>
               <p>Toggle theme</p>
