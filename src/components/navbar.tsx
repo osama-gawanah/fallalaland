@@ -27,7 +27,7 @@ export default function Navbar() {
                     "size-12"
                   )}
                 >
-                  <item.icon className="size-4" />
+                  <item.icon className="size-4 text-[#581e97]" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -52,7 +52,7 @@ export default function Navbar() {
                       "size-12 transition-all duration-200 hover:scale-110 hover:bg-accent/50"
                     )}
                   >
-                    <social.icon className="size-4 transition-colors duration-200" />
+                    <social.icon className="size-4 transition-colors duration-200 text-[#581e97]" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
