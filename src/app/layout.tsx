@@ -57,7 +57,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased relative  md:max-w-6xl mx-auto py-12 sm:py-24 border"
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
 
             <div className="absolute top-0 left-0 h-[600px] w-full overflow-hidden">

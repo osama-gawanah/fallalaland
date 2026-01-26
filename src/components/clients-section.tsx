@@ -17,7 +17,7 @@ function ClientCard({ src, alt }: ClientCardProps) {
         <div
             className={cn(
                 "flex h-24 w-40 p-2 shrink-0 items-center justify-center rounded-xl border",
-                "bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white",
+                "bg-gradient-to-b dark:from-neutral-700 dark:to-neutral-800 from-neutral-100 to-white",
                 "border-border/50",
                 "transition-all duration-300",
                 "hover:border-foreground/40 hover:scale-105",
@@ -27,7 +27,7 @@ function ClientCard({ src, alt }: ClientCardProps) {
             <Image
                 src={src}
                 alt={alt}
-                className="h-full w-full object-contain"
+                className="h-full w-full object-contain dark:contrast-125"
                 width={160}
                 height={96}
             />

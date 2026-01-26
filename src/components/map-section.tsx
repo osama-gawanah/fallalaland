@@ -13,10 +13,10 @@ export function MapSection() {
               Map
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              CNC Around The World.
+              Fallalaland Around The World.
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              CNC is a global company that operates in over 4 countries.
+              Fallalaland is a global company that operates in over 4 countries.
             </p>
           </div>
         </div>

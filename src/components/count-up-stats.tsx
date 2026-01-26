@@ -7,7 +7,7 @@ const Stats = () => {
     return (
         <div className=" md:px-6 px-4">
             <h2 className="mb-8 text-center text-4xl font-bold tracking-tight leading-tight">
-                CNC in Numbers
+                Our Achievements
             </h2>
 
             <div className="flex flex-col items-center justify-center sm:flex-row">

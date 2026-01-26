@@ -26,6 +26,14 @@ export function HeroSection() {
               </Highlighter>
             </div>
 
+
+            <BlurFadeText
+              delay={BLUR_FADE_DELAY * 2}
+              className="text-3xl font-bold  sm:text-3xl mt-3 leading-none xl:text-5xl/none"
+              yOffset={8}
+              text="Book your event now"
+            />
+
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Markdown className="prose dark:text-muted-foreground text-black md:text-xl">
                 {DATA.description}

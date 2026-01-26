@@ -53,25 +53,24 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: "easeIn", delay: 0 }}
-            className="block"
+            className=""
           >
-            EVENTS
+            EVENTS{" "}
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: "easeIn", delay: 0.05 }}
-            className="block text-[#581e97] drop-shadow-[0_0_20px_rgba(88,30,151,0.35)]"
+            className="text-[#581e97] drop-shadow-[0_0_20px_rgba(88,30,151,0.35)]"
           >
-            DIRECTED
+            DIRECTED{" "}
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: "easeIn", delay: 0.1 }}
-            className="block"
           >
             LIKE ART
           </motion.span>

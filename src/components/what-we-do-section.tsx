@@ -104,7 +104,7 @@ const services: ServiceCategory[] = [
     title: "Games and Activities",
     icon: Gamepad2,
     gradient: "from-purple-500/20 via-pink-500/20 to-rose-500/20",
-    iconGradient: "from-purple-600 to-pink-500",
+    iconGradient: "from-purple-500 to-violet-500",
     glowColor: "purple",
     bgColor: "bg-[#571e9a]",
     items: [
@@ -173,59 +173,57 @@ export function WhatWeDoSection() {
         </BlurFade>
 
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
-            {/* Wobble Cards Grid */}
-        <div className="space-y-4 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-          {services.map((service) => (
-            <WobbleCard
-              key={service.id}
-              containerClassName={cn(
-                "w-full",
-                service.bgColor
-              )}
-              className="relative"
-            >
-              <div className="w-full max-w-6xl mx-auto">
-                <div className="flex items-center gap-3 mb-6">
-                  <div
-                    className={cn(
-                      "w-14 h-14 rounded-lg flex items-center justify-center flex-shrink-0",
-                      "bg-gradient-to-br",
-                      service.iconGradient
-                    )}
-                  >
-                    {React.createElement(service.icon, {
-                      className: "w-7 h-7 text-white",
-                      strokeWidth: 2.5,
+          {/* Wobble Cards Grid */}
+          <div className="space-y-4 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+            {services.map((service) => (
+              <WobbleCard
+                key={service.id}
+                containerClassName={cn(
+                  "w-full",
+                  service.bgColor
+                )}
+                className="relative"
+              >
+                <div className="w-full max-w-6xl mx-auto">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div
+                      className={cn(
+                        "w-14 h-14 rounded-lg flex items-center justify-center flex-shrink-0",
+                        "bg-gradient-to-br",
+                        service.iconGradient
+                      )}
+                    >
+                      {React.createElement(service.icon, {
+                        className: "w-7 h-7 text-white",
+                        strokeWidth: 2.5,
+                      })}
+                    </div>
+                    <div>
+
+                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+                        {service.title}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3">
+                    {service.items.map((item, idx) => {
+                      const ItemIcon = item.icon || Sparkles;
+                      return (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-3 p-3 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors"
+                        >
+                          {/* <ItemIcon className="w-5 h-5 text-white flex-shrink-0" strokeWidth={2} /> */}
+                          <span className="text-sm text-white/90 font-medium text-nowrap truncate">{item.name}</span>
+                        </div>
+                      );
                     })}
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-white/70 mb-1">
-                      Service {service.id}
-                    </div>
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                      {service.title}
-                    </h3>
-                  </div>
                 </div>
-
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
-                  {service.items.map((item, idx) => {
-                    const ItemIcon = item.icon || Sparkles;
-                    return (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-3 p-3 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors"
-                      >
-                        {/* <ItemIcon className="w-5 h-5 text-white flex-shrink-0" strokeWidth={2} /> */}
-                        <span className="text-sm text-white/90 font-medium text-nowrap truncate">{item.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </WobbleCard>
-          ))}
-        </div>
+              </WobbleCard>
+            ))}
+          </div>
         </BlurFade>
       </div>
     </section>
