@@ -35,7 +35,7 @@ const TrustReasonsCarousel = () => {
                 trust us
               </span>
             </h2>
-            <div className="flex gap-2  md:px-6 px-4">
+            <div className="flex gap-2 md:px-6 px-4">
               <Button
                 onClick={shiftLeft}
                 disabled={position === 0}
@@ -97,7 +97,7 @@ const TrustReasonCard = ({
         ease: "easeInOut",
         duration: 0.35,
       }}
-      className={`relative rounded-xl  flex md:min-h-[200px] min-h-[150px] w-8/12 max-w-lg shrink-0 flex-col justify-between md:p-8 p-4 md:w-3/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
+      className={`relative rounded-xl flex md:min-h-[200px] min-h-[150px] w-8/12 max-w-lg shrink-0 flex-col justify-between md:p-8 p-4 md:w-2/5 ${index % 2 ? "bg-[#581e97] text-white" : "bg-white border-2 dark:bg-neutral-900 text-black dark:text-white"
         }`}
     >
       <Icon className="absolute right-2 top-2 w-32 h-32 opacity-20 stroke-[#7f1dfe]" />
