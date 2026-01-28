@@ -268,7 +268,7 @@ const phoneData = [
     tone: "results",
     gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
     videoSrc:
-      "/videos/6.mp4",
+      "/videos/7.mp4",
   },
 
   {
@@ -277,6 +277,6 @@ const phoneData = [
     tone: "results",
     gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
     videoSrc:
-      "/videos/4.mp4",
+      "/videos/8.mp4",
   },
 ]
