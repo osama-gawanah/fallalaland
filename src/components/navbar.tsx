@@ -10,6 +10,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -27,7 +28,7 @@ export default function Navbar() {
                     "size-12"
                   )}
                 >
-                  <item.icon className="size-4 text-[#581e97]" />
+                  <item.icon className="size-4" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -52,7 +53,7 @@ export default function Navbar() {
                       "size-12 transition-all duration-200 hover:scale-110 hover:bg-accent/50"
                     )}
                   >
-                    <social.icon className="size-4 transition-colors duration-200 text-[#581e97]" />
+                    <Image src={social.icon as unknown as string} alt={name} width={20} height={20} />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>

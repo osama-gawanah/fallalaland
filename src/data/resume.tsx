@@ -52,19 +52,19 @@ export const DATA = {
       WhatsApp: {
         name: "WhatsApp",
         url: "https://wa.me/966550152187",
-        icon: Icons.whatsapp,
+        icon: "/whatsapp-symbol-logo-svgrepo-com.svg",
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/company/fallalaland/?originalSubdomain=sa",
-        icon: Icons.linkedin,
+        icon: "/linkedin-svgrepo-com.svg",
         navbar: true,
       },
       Instagram: {
         name: "Instagram",
         url: "https://www.instagram.com/fallalaland/",
-        icon: Icons.instagram,
+        icon: "/instagram-1-svgrepo-com.svg",
         navbar: true,
       },
 
